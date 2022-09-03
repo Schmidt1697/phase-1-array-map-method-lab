@@ -12,5 +12,17 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
-}
+  //map over 1st array and make every word start w/ uppercase
+ 
+  const capitalFirstLetter = tutorials.map((item) => item.split( " ").map(word => word[0].toUpperCase() + word.slice(1)).join(" "));
+
+  console.log(capitalFirstLetter)
+  return capitalFirstLetter;
+  }
+  
+  
+
+titleCased();
+
+
+
